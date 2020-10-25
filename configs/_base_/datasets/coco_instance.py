@@ -56,3 +56,6 @@ data = dict(
         img_prefix= '/content/gdrive/My Drive/Arirang/data/test/images/',
         pipeline=test_pipeline))
 evaluation = dict(metric=['bbox', 'segm'])
+total_epochs = 1000
+log_level = 'INFO'
+work_dir = '/content/gdrive/My Drive/Arirang/models/htc_without_semantic_r50_fpn_1x_dota1_5_car/'
