@@ -4,7 +4,7 @@ imgae_root = '/content/gdrive/My Drive/Arirang/data/train/coco_all/'
 img_norm_cfg = dict(
     mean=[54.06, 53.295, 50.235], std=[36.72, 35.955, 33.915], to_rgb=True)
 train_pipeline = [
-    dict(type='LoadImageFromFile'),
+    dict(type='LoadImageFromFile', to_float32=True),
     dict(type='LoadAnnotations', with_bbox=True, with_mask=True),
     dict(type='Resize', img_scale=(1024, 1024), keep_ratio=True),
     dict(type='RandomCrop', crop_size=(640, 640)),    
