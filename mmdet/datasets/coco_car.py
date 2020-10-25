@@ -25,7 +25,7 @@ except AssertionError:
 
 
 @DATASETS.register_module()
-class CocoDataset(CustomDataset):
+class CocoDatasetCar(CustomDataset):
 
     CLASSES = ('small ship', 'small car', 'bus', 'truck', 'train')
 
